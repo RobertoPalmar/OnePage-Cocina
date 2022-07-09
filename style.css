@@ -1,0 +1,245 @@
+html * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'Louis George';
+  src: url('fuentes/Louis George/Louis George Cafe Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Made Tommy';
+  src: url('fuentes/Made Tommy/MADE TOMMY Regular_PERSONAL USE.otf');
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 35rem;
+  background: rgba(0, 0, 0, 0.1) url("multimedia/Cocina bg 2.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.Header__Title {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: white;
+  font-family: 'Louis George', sans-serif;
+  font-weight: normal;
+  font-size: 5rem;
+  line-height: 8rem;
+}
+
+.Header__Blue {
+  font-style: normal;
+  background: rgb(0, 90, 194);
+  padding: 0 .2rem;
+}
+
+.Nav {
+  width: 100%;
+  height: 4rem;
+  margin-bottom: 2rem;
+  background: rgb(0, 90, 194);
+  box-shadow: 0 0 .5rem #000;
+  display: flex;
+  justify-content: center;
+}
+
+.Nav__Menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Nav__Item {
+  display: block;
+}
+
+.Nav__Link {
+  padding: 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Made Tommy';
+  font-size: 1.2rem;
+  color: white;
+  transition: background-color .2s;
+}
+
+.Nav__Link:hover {
+  background: #555;
+}
+
+.Section {
+  display: grid;
+  margin: 1.5rem 0;
+  padding: 1rem 6rem;
+  box-shadow: 0 0 .5rem #0003;
+  border-radius: .5rem;
+}
+
+.Section.TwoColumns {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Section.ThreeColumns {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.Section__Column {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Span3{grid-column: span 3;}
+.SpanV2{grid-row: span 2;}
+.SpanH2{grid-column: span 2;}
+.SpanH3{grid-column: span 3;}
+
+.Section__Img {
+  width: 100%;
+  height: 22rem;
+  object-fit: cover;
+  border-radius: .5rem;
+  border-bottom: .7rem solid rgb(0, 90, 194);
+}
+
+.Vertical{
+  height: 27rem;
+}
+
+.Section__Title {
+  font-family: 'Louis George', sans-serif;
+  font-size: 3.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.Section__SubTitle{
+  font-family: 'Made Tommy';
+  font-size: 2rem;
+  margin: .5rem 0;
+  text-align: center;
+}
+
+.Section__Text{
+  font-family: 'Louis George', sans-serif;
+  font-size: 1.6rem;
+  margin: .5rem 0;
+  text-align: center;
+}
+
+.Right {text-align: right;}
+.Left {text-align: left;}
+.Alter {font-family: 'Made Tommy';}
+
+hr{
+  display: block;
+  margin: 2.5rem auto;
+  width: 85%;
+  height: .35rem;
+  background-color: rgb(0, 90, 194);
+}
+
+.Section__Form, .Form__Section{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Form__Section{
+  padding: .2rem .5rem;
+  width: 80%;
+  margin: auto
+}
+
+.Form__Label{
+  margin-bottom: .5rem;
+  font-size: 1.3rem;
+  font-family: 'Louis George', sans-serif;
+  font-size: 1.4rem;
+}
+
+.Form__Input{
+  font-size: 1.25rem;
+  outline: none;
+  padding: .3rem;
+  font-family: 'Louis George', sans-serif;
+  font-size: 1.4rem;
+}
+
+.Form__Button{
+  font-family: 'Louis George', sans-serif;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  width: 10rem;
+  height: 2.8rem;
+  margin: 1rem auto;
+  background-color: rgb(0, 90, 194);
+  color: white;
+  transition: background .3s;
+}
+
+.Form__Button:hover{
+  background: rgb(49, 49, 49);
+}
+
+textarea.Form__Input{
+  resize: none; 
+  width: calc(100% - .6rem);
+  height: 5rem;
+}
+
+.Footer{
+  font-family: 'Louis George', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgb(66, 66, 66);
+  color: white;
+}
+
+.Footer__Text{
+  font-size: 1.1rem;
+}
+
+.Footer__Icons{
+  display: flex;
+  justify-content: space-evenly;
+  margin: .5rem;
+}
+
+.Footer__Icons{
+  font-size: 2rem;
+}
+
+.fa:hover {
+  opacity: 0.9;
+}
+
+.fa {
+  text-decoration: none;
+  margin: 1rem;
+  color: white;
+}
